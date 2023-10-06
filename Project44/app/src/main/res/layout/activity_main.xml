@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="선택을 시작하겠습니까?" />
+
+    <Switch
+        android:id="@+id/SwAgree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시작함" />
+
+    <TextView
+        android:id="@+id/Text2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="좋아하는 안드로이드 버전은?"
+        android:visibility="invisible" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id = "@+id/Rgroup1"
+        android:visibility = "invisible">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id = "@+id/RdoQ"
+            android:text = "R(11.0)" />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id = "@+id/RdoR"
+            android:text = "S(12.0)" />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id = "@+id/RdoS"
+            android:text = "T(13.0)" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/Img"
+        android:layout_width="600px"
+        android:layout_height="400px"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:enabled="true"
+        android:textColor="#000000"
+        android:text="종료" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:enabled="true"
+        android:textColor="#000000"
+        android:text="처음으로" />
+
+</LinearLayout>
